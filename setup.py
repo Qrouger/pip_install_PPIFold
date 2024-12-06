@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='PPIFold',
-    version='0.0.2',
+    version='0.0.3',
     description=(
         'Pipeline that automates AlphaPulldown'
     ),
