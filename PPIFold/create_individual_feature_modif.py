@@ -3,7 +3,7 @@
 # Create features for AlphaFold from fasta file(s) or a csv file with descriptions for multimeric templates
 # #
 """
-Original script write by AlphaPulldown teams
+Original script write by AlphaPulldown team
 https://github.com/KosinskiLab/AlphaPulldown
 """
 import json
