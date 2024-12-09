@@ -17,4 +17,5 @@ setup(
     install_requires=[
         'alphapulldown'
     ]
+    entry_points={'console_scripts': ['PPIFold=PPIFold.PPIFold:main',],}
 )
