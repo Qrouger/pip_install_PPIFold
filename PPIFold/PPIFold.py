@@ -18,7 +18,16 @@ def add_arguments(parser) :
     parser.add_argument("--use_signalP" , help = "Used or not SignalP", required = False, default = True)
     parser.add_argument("--org" , help = "Organism of interest : arch, gram+, gram- or euk", required = False, default = "gram-", type = str)
 
-def main(A4) :
+def main() :
+    path_dict = define_path()
+    parser = argparse.ArgumentParser()
+    add_arguments(parser)
+    args = parser.parse_args()
+    A4 = File_proteins(path_dict["Path_Uniprot_ID"])
+    A4.find_proteins_sequence()
+    A4.find_prot_lenght()
+    A4.already_pickle(path_dict["Path_Pickle_Feature"])
+    A4.create_fasta_file()
     if args.use_signalP == True :
         remove_SP(A4,args.org)
     create_feature(A4,args.env_feature,path_dict["Path_AlphaFold_data"],path_dict["Path_Pickle_Feature"])
@@ -34,14 +43,14 @@ def main(A4) :
         create_out_fig(A4)
         generate_interaction_network(A4)
 
-if __name__ == "__main__" :
-    path_dict = define_path()
-    parser = argparse.ArgumentParser()
-    add_arguments(parser)
-    args = parser.parse_args()
-    A4 = File_proteins(path_dict["Path_Uniprot_ID"])
-    A4.find_proteins_sequence()
-    A4.find_prot_lenght()
-    A4.already_pickle(path_dict["Path_Pickle_Feature"])
-    A4.create_fasta_file()
-    main(A4)
+#if __name__ == "__main__" :
+#    path_dict = define_path()
+#    parser = argparse.ArgumentParser()
+#    add_arguments(parser)
+#    args = parser.parse_args()
+#    A4 = File_proteins(path_dict["Path_Uniprot_ID"])
+#    A4.find_proteins_sequence()
+#    A4.find_prot_lenght()
+#    A4.already_pickle(path_dict["Path_Pickle_Feature"])
+#    A4.create_fasta_file()
+#    main(A4)
