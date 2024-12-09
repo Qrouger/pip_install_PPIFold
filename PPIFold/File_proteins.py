@@ -4,10 +4,11 @@
 """
 import urllib.request
 import re
-from utils import *
 import csv
 import os
 import copy
+
+from .utils import *
 
 class File_proteins() :
     """
