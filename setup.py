@@ -15,7 +15,11 @@ setup(
     include_package_data=True,
     packages=find_packages(),
     install_requires=[
-        'alphapulldown'
+        'alphapulldown',
+        'seaborn',
+        'urllib3',
+        'matplotlib',
+        'scipy'
     ],
     entry_points={'console_scripts': ['PPIFold=PPIFold.PPIFold:main',],}
 )
