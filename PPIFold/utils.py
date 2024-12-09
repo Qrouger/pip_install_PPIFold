@@ -17,7 +17,7 @@ import gzip
 import string
 import seaborn
 
-from File_proteins import *
+from .File_proteins import *
 
 def define_path() :
     """
