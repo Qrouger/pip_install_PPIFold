@@ -4,8 +4,8 @@
 """
 import argparse
 
-from utils import *
-from File_proteins import *
+from . import utils
+from . import File_proteins
 import sys
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'AlphaPulldown')))
