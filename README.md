@@ -1,5 +1,5 @@
 Install AlphaFold database :<br>
-<Tab>   git clone https://github.com/deepmind/alphafold.git<br>
+&emsp  git clone https://github.com/deepmind/alphafold.git<br>
 <Tab>    cd alphafold scripts/download_all_data.sh <directory> > download.log 2> download_all.log<br>
 Install SignalP5<br>
 pip install PPIFold<br>
