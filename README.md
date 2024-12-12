@@ -1,3 +1,12 @@
+Install AlphaFold database :
+    git clone https://github.com/deepmind/alphafold.git
+    cd alphafold scripts/download_all_data.sh <directory> > download.log 2> download_all.log
+Install SignalP5
+pip install PPIFold
+pip install -U "jax[cuda12]"
+
+
+
 # PPIFold
 Automatised pipeline for massive PPI prediction and figure creation.
 
