@@ -1,6 +1,6 @@
 Install AlphaFold database :<br>
-    git clone https://github.com/deepmind/alphafold.git<br>
-    cd alphafold scripts/download_all_data.sh <directory> > download.log 2> download_all.log<br>
+<\t>   git clone https://github.com/deepmind/alphafold.git<br>
+<\t>    cd alphafold scripts/download_all_data.sh <directory> > download.log 2> download_all.log<br>
 Install SignalP5<br>
 pip install PPIFold<br>
 pip install -U "jax[cuda12]"<br>
