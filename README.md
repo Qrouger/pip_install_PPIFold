@@ -1,7 +1,8 @@
 Install AlphaFold database :<br>
+- sudo apt install aria2
 - git clone https://github.com/deepmind/alphafold.git<br>
 - cd alphafold
-- scripts/download_all_data.sh <directory> > download.log 2> download_all.log<br>
+- scripts/download_all_data.sh (Directory) > download.log 2> download_all.log<br>
 
 Install SignalP5<br>
 pip install PPIFold<br>
