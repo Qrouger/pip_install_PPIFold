@@ -8,6 +8,10 @@ Install Singularity :<br>
 
 https://docs.sylabs.io/guides/3.0/user-guide/installation.html#install-on-linux
 
+
+Download Singularity :<br>
+https://github.com/KosinskiLab/AlphaPulldown?tab=readme-ov-file#03-installation-for-the-downstream-analysis-tools
+
 conda install conda-forge::openmm
 conda install bioconda::hhsuite
 
