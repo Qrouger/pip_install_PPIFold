@@ -19,6 +19,7 @@ https://services.healthtech.dtu.dk/cgi-bin/sw_request?software=signalp&version=5
 conda install conda-forge::openmm<br>
 conda install bioconda::hhsuite<br>
 conda install kalign2<br>
+pdbfixer==1.9<br>
 
 pip install PPIFold<br>
 pip install -U "jax[cuda12]"<br>
