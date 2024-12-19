@@ -13,6 +13,7 @@ https://github.com/KosinskiLab/AlphaPulldown?tab=readme-ov-file#03-installation-
 
 conda install conda-forge::openmm
 conda install bioconda::hhsuite
+conda install kalign2
 
 Install SignalP5<br>
 pip install PPIFold<br>
