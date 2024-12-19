@@ -4,6 +4,9 @@ Install AlphaFold database :<br>
 - cd alphafold
 - scripts/download_all_data.sh /Directory > download.log 2> download_all.log<br>
 
+Install Singularity :<br>
+
+https://docs.sylabs.io/guides/3.0/user-guide/installation.html#install-on-linux
 
 conda install conda-forge::openmm
 conda install bioconda::hhsuite
