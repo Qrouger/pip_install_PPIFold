@@ -20,8 +20,7 @@ setup(
         'urllib3',
         'matplotlib',
         'scipy',
-        'hmmer',
-        'hhsearch-python'
+        'hmmer'
     ],
     entry_points={'console_scripts': ['PPIFold=PPIFold.PPIFold:main',],}
 )
