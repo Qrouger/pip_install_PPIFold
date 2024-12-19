@@ -4,6 +4,10 @@ Install AlphaFold database :<br>
 - cd alphafold
 - scripts/download_all_data.sh /Directory > download.log 2> download_all.log<br>
 
+
+conda install conda-forge::openmm
+conda install bioconda::hhsuite
+
 Install SignalP5<br>
 pip install PPIFold<br>
 pip install -U "jax[cuda12]"<br>
