@@ -19,7 +19,8 @@ setup(
         'seaborn',
         'urllib3',
         'matplotlib',
-        'scipy'
+        'scipy',
+        'hmmer'
     ],
     entry_points={'console_scripts': ['PPIFold=PPIFold.PPIFold:main',],}
 )
