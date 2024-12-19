@@ -11,11 +11,15 @@ https://docs.sylabs.io/guides/3.0/user-guide/installation.html#install-on-linux
 Download Singularity image :<br>
 https://github.com/KosinskiLab/AlphaPulldown?tab=readme-ov-file#03-installation-for-the-downstream-analysis-tools
 
+
+Install SignalP5 (optional, use_signalP = False) :<br>
+https://services.healthtech.dtu.dk/cgi-bin/sw_request?software=signalp&version=5.0&packageversion=5.0b&platform=Linux
+
+
 conda install conda-forge::openmm
 conda install bioconda::hhsuite
 conda install kalign2
 
-Install SignalP5<br>
 pip install PPIFold<br>
 pip install -U "jax[cuda12]"<br>
 
