@@ -16,11 +16,13 @@ Install SignalP5 (optional, use_signalP = False) :<br>
 https://services.healthtech.dtu.dk/cgi-bin/sw_request?software=signalp&version=5.0&packageversion=5.0b&platform=Linux
 
 
-conda install conda-forge::openmm<br>
-conda install bioconda::hhsuite<br>
-conda install kalign2<br>
-pdbfixer==1.9<br>
+###conda install conda-forge::openmm<br>
+###conda install bioconda::hhsuite<br>
+###conda install kalign2<br>
+###pdbfixer==1.9<br>
 
+conda create -n PPIFold -c omnia -c bioconda -c conda-forge python==3.11 openmm==8.0 pdbfixer==1.9 kalign2
+source activate AlphaPulldown
 pip install PPIFold<br>
 pip install -U "jax[cuda12]"<br>
 
