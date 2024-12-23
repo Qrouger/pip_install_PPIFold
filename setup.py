@@ -22,7 +22,7 @@ setup(
         'scipy',
         'hmmer',
         'networkx',
-        'tensorflow==2.14.0'
+        'tensorflow'
     ],
     entry_points={'console_scripts': ['PPIFold=PPIFold.PPIFold:main',],}
 )
