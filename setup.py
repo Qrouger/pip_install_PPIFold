@@ -20,7 +20,8 @@ setup(
         'urllib3',
         'matplotlib',
         'scipy',
-        'hmmer'
+        'hmmer',
+        'networkx'
     ],
     entry_points={'console_scripts': ['PPIFold=PPIFold.PPIFold:main',],}
 )
