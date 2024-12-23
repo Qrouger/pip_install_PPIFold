@@ -11,8 +11,3 @@ Compilation Time Workaround with XLA Flags
 To work around a known XLA issue causing the compilation time to greatly increase, the following environment variable must be set (it is set by default in the provided Dockerfile).
 
 ENV XLA_FLAGS="--xla_gpu_enable_triton_gemm=false"
-
-JAX Persistent Compilation Cache
-You may also want to make use of the JAX persistent compilation cache, to avoid unnecessary recompilation of the model between runs. You can enable the compilation cache with the --jax_compilation_cache_dir <YOUR_DIRECTORY> flag in run_alphafold.py.
-
-More detailed instructions are available in the JAX documentation, and more specifically the instructions for use on Google Cloud. In particular, note that if you would like to make use of a non-local filesystem, such as Google Cloud Storage, you will need to install etils (this is not included by default in the AlphaFold 3 Docker container).
