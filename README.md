@@ -24,6 +24,8 @@ https://services.healthtech.dtu.dk/cgi-bin/sw_request?software=signalp&version=5
 conda create -n PPIFold -c omnia -c bioconda -c conda-forge python==3.11 openmm==8.0 pdbfixer==1.9 kalign2
 source activate PPIFold<br>
 pip install PPIFold<br>
+pip install tensorrt
+pip install tensorflow[and-cuda]
 pip install -U "jax[cuda12]"<br>
 
 
