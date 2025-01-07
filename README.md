@@ -20,12 +20,9 @@ https://services.healthtech.dtu.dk/cgi-bin/sw_request?software=signalp&version=5
 ###conda install bioconda::hhsuite<br>
 ###conda install kalign2<br>
 ###pdbfixer==1.9<br>
-
-conda create -n PPIFold -c omnia -c bioconda -c conda-forge python==3.11 openmm==8.0 pdbfixer==1.9 kalign2
-source activate PPIFold<br>
+conda create -n PPIFold -c omnia -c bioconda -c conda-forge python==3.11 openmm==8.0 pdbfixer==1.9 kalign2 hhsuite hmmer modelcif networkx
+conda activate PPIFold<br>
 pip install PPIFold<br>
-pip install tensorrt
-pip install tensorflow[and-cuda]
 pip install -U "jax[cuda12]"<br>
 
 
@@ -41,9 +38,8 @@ This allows to predict massive multimer complex with lot of PPI.
 ## Requirements
 
 - Python >= 3.10
-- AlphaPulldown 1.0.4 command line interface https://github.com/KosinskiLab/AlphaPulldown with singularity image (v0.4)
 - SignalP5 https://services.healthtech.dtu.dk/services/SignalP-5.0/9-Downloads.php
-
+- AlphaFold data base
 ## Installation
 
 You need to install AlphaPulldown 1.0.4 with AlphaFold database, SignalpP5 and python 3.10.
