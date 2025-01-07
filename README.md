@@ -8,7 +8,7 @@ Install Singularity :<br>
 https://docs.sylabs.io/guides/3.0/user-guide/installation.html#install-on-linux
 
 
-Download Singularity image :<br>
+Download Singularity image (score generation) :<br>
 https://github.com/KosinskiLab/AlphaPulldown?tab=readme-ov-file#03-installation-for-the-downstream-analysis-tools
 
 
