@@ -21,8 +21,7 @@ setup(
         'matplotlib',
         'scipy',
         'hmmer',
-        'networkx',
-        'tensorflow'
+        'networkx'
     ],
     entry_points={'console_scripts': ['PPIFold=PPIFold.PPIFold:main',],}
 )
