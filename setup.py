@@ -6,7 +6,7 @@ setup(
     name='PPIFold',
     version='0.0.8',
     description=(
-        'Pipeline that automates AlphaPulldown'
+        'Automatic pipeline using AlphaPulldown to predict PPI and homo-oligomer'
     ),
     author='Quentin Rouger',
     author_email='quentin.rouger@univ-rennes.fr',
