@@ -60,7 +60,7 @@ PPIFold --make_multimers Boolean --max_aa Integer --use_signalP Boolean --org St
 
 Optional arguments
 
---make_multimers This argument is True by default, if you just want make feature and MSA generation you have to set it on False <br>
+--make_multimers If you just want make feature and MSA generation you have to set it on False, set by default on True <br>
 --max_aa The maximum lenght of a model generable by your GPU (in function of Vram), set by default on 2400 (24 Go) <br>
 --use_signalP Use SignalP if your proteins can be periplasmic, set by default on True <br>
 --org If you use SignalP, you can select the organism (gram-, gram+, arch or euch), set by default on gram- <br>
