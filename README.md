@@ -33,7 +33,7 @@ This allows to predict massive multimer complex with lot of PPI.
 
 ## Requirements
 
-- Python >= 3.10
+- Anaconda
 - SignalP5 https://services.healthtech.dtu.dk/services/SignalP-5.0/9-Downloads.php
 - AlphaFold data base
 ## Installation
