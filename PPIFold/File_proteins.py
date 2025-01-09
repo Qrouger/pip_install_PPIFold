@@ -418,9 +418,9 @@ class File_proteins() :
                     hiQ_score_dic[prot_name] = (float(row['hiQ_score']),number_homo)
         self.set_hiQ_score_dict(hiQ_score_dic)
 
-    def already_pickle (self, pickle_path) : #maybe useless ??
+    def already_pickle (self, pickle_path) :
         """
-        Check if protein have already a feature pickle file, and return a list of proteins who doesn't.
+        Check if protein have already a feature pickle file, return adn set a list of proteins who doesn't.
 
         Parameters:
         ----------
@@ -437,6 +437,7 @@ class File_proteins() :
             else :
                 prot_need_pkl.append(uniprotID)
         self.set_new_pickle(prot_need_pkl)
+        return(prot_need_pkl)
 
     def define_interface (self, list_of_list_int, int) :
         """
