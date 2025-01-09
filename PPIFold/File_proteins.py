@@ -4,7 +4,7 @@
 """
 import urllib.request
 import re
-from Utils import *
+from .Utils import *
 import csv
 import os
 import copy
@@ -432,7 +432,7 @@ class File_proteins() :
         prot_need_pkl = list()
         proteins = self.get_proteins()
         for uniprotID in proteins :
-           if os.path.isfile(pickle_path + "/" + uniprotID + ".pkl") :
+            if os.path.isfile(pickle_path + "/" + uniprotID + ".pkl") :
                 pass
             else :
                 prot_need_pkl.append(uniprotID)
