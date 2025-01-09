@@ -24,12 +24,12 @@ def main() :
     A4 = File_proteins(path_dict["Path_Uniprot_ID"])
     A4.find_proteins_sequence()
     A4.find_prot_lenght()
-    if len(A4.already_pickle(path_dict["Path_Pickle_Feature"])) > 0 :
+    if len(A4.already_pickle(path_dict["Path_Pickle_Feature"])) > 0 : #if new feature pickle is need
         A4.create_fasta_file()
         if args.use_signalP == True :
             remove_SP(A4,args.org)
-    create_feature(A4,path_dict["Path_AlphaFold_Data"],path_dict["Path_Pickle_Feature"])
-    Make_all_MSA_coverage(A4,path_dict["Path_Pickle_Feature"])
+        create_feature(A4,path_dict["Path_AlphaFold_Data"],path_dict["Path_Pickle_Feature"])
+        Make_all_MSA_coverage(A4,path_dict["Path_Pickle_Feature"])
     generate_APD_script(A4, args.max_aa)
     if args.make_multimers == True :
         Make_all_vs_all(path_dict["Path_AlphaFold_Data"],path_dict["Path_Pickle_Feature"])
