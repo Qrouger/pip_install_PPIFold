@@ -1,3 +1,9 @@
+git clone https://github.com/Qrouger/PPIFold.git<br>
+cd PPIFold<br>
+python -m build<br>
+twine upload dist/*<br>
+
+
 Install AlphaFold database :<br>
 - sudo apt install aria2
 - git clone https://github.com/deepmind/alphafold.git<br>
