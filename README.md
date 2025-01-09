@@ -16,12 +16,6 @@ Install SignalP5 (optional, use_signalP = False) :<br>
 https://services.healthtech.dtu.dk/cgi-bin/sw_request?software=signalp&version=5.0&packageversion=5.0b&platform=Linux
 
 
-conda create -n PPIFold -c omnia -c bioconda -c conda-forge python==3.11 openmm==8.0 pdbfixer==1.9 kalign2 hhsuite hmmer modelcif networkx<br>
-conda activate PPIFold<br>
-pip install PPIFold<br>
-pip install -U "jax[cuda12]"<br>
-
-
 
 # PPIFold
 Automatised pipeline for massive PPI prediction and figure creation.
@@ -38,9 +32,10 @@ This allows to predict massive multimer complex with lot of PPI.
 - AlphaFold data base
 ## Installation
 
-You need to install AlphaPulldown 1.0.4 with AlphaFold database, SignalpP5 and python 3.10.
-
-git clone https://github.com/Qrouger/PPIFold.git
+conda create -n PPIFold -c omnia -c bioconda -c conda-forge python==3.11 openmm==8.0 pdbfixer==1.9 kalign2 hhsuite hmmer modelcif networkx<br>
+conda activate PPIFold<br>
+pip install PPIFold<br>
+pip install -U "jax[cuda12]"<br>
 
 ## Pipeline
 
