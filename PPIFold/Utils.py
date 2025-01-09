@@ -366,7 +366,7 @@ def Make_homo_oligo (data_dir, Path_Pickle_Feature) :
     cmd1 = "export XLA_PYTHON_CLIENT_PREALLOCATE=false"
     cmd2 = "TF_FORCE_UNIFIED_MEMORY=true"
     cmd3 = "XLA_CLIENT_MEM_FRACTION=3.2"
-    cmd4 =f"run_multimer_jobs.py --mode=custom \--output_path=result_homo_oligo \--num_cycle=3 \--compress_result_pickles=True \--oligomer_state_file=homo_oligo.txt \--monomer_objects_dir={Path_Pickle_Feature} \--data_dir={data_dir} \--remove_result_pickles=False"
+    cmd4 =f"run_multimer_jobs.py --mode=custom \--num_cycle=3 \--num_predictions_per_model=1 \--compress_result_pickles=True \--output_path=./result_homo_oligo \--data_dir={data_dir} \--protein_lists=homo_oligo.txt \--monomer_objects_dir={Path_Pickle_Feature}"
     os.system(cmd1)
     os.system(cmd2)
     os.system(cmd3)
